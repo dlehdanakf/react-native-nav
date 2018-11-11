@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { View, Platform } from "react-native"
-import { StatusBarEnhanced } from "./components/StatusBarEnhanced"
 export { NavGroup } from "./components/NavGroup"
 export { NavButton } from "./components/NavButton"
 export { NavButtonText } from "./components/NavButtonText"
@@ -26,7 +25,6 @@ function NavigationBar({ style, children, statusBar }) {
 
   return (
     <View style={[styles.navBarContainer, style.navBarContainer]}>
-      <StatusBarEnhanced style={style.statusBar} statusBar={statusBar} />
       {navBar}
     </View>
   )
